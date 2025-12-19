@@ -61,7 +61,7 @@ export default function Header() {
             href="/"
             className="hidden sm:flex h-full items-center bg-[#0065ff] hover:bg-[#0747a6] text-white px-6 font-semibold text-lg transition-colors whitespace-nowrap"
           >
-            Get Trello for free
+            Get Fun To Do M for free
           </Link>
         </div>
       </div>

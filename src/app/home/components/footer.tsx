@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Globe, ChevronDown } from "lucide-react";
-import { Logo } from "./logo";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { LogoFooter } from "./logo-footer";
 
 export default function Footer() {
   const columnClass = "group cursor-pointer p-4 rounded-lg transition-colors duration-300 hover:bg-white/10";
@@ -12,15 +12,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12">
           <div className="col-span-1 p-4">
             <div className="flex items-center gap-2 font-bold text-2xl mb-4">
-               <Logo />
+               <LogoFooter />
             </div>
-            <Link href="/login" className="block text-white font-semibold hover:underline mb-4">
-              Log In
-            </Link>
           </div>
 
           <div className={columnClass}>
-            <h3 className="font-bold mb-4">About Trello</h3>
+            <h3 className="font-bold mb-4">About Fun To Do M</h3>
             <ul className="space-y-2 text-sm text-gray-300 group-hover:text-white">
               <li>
                 <Link href="#">What's behind the boards</Link>
@@ -32,7 +29,7 @@ export default function Footer() {
             <h3 className="font-bold mb-4">Jobs</h3>
             <ul className="space-y-2 text-sm text-gray-300 group-hover:text-white">
               <li>
-                <Link href="#">Learn about open roles on the Trello team.</Link>
+                <Link href="#">Learn about open roles on the Fun To Do M team.</Link>
               </li>
             </ul>
           </div>
@@ -41,7 +38,7 @@ export default function Footer() {
             <h3 className="font-bold mb-4">Apps</h3>
             <ul className="space-y-2 text-sm text-gray-300 group-hover:text-white">
               <li>
-                <Link href="#">Download the Trello App for your Desktop or Mobile devices.</Link>
+                <Link href="#">Download the Fun To Do M App for your Desktop or Mobile devices.</Link>
               </li>
             </ul>
           </div>

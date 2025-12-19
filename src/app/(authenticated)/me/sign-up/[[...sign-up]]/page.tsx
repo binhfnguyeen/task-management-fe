@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { userMessageErrorMap } from "../../../../../../packages/shared/constants/user-message-error";
 import Link from "next/link";
+import { Logo } from "@/app/home/components/logo";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -40,8 +41,10 @@ export default function SignUpPage() {
     <div className="flex min-h-screen items-center justify-center bg-[#f9fafc] p-6">
       <div className="w-full max-w-[400px] rounded-sm bg-white p-8 shadow-[0_8px_16px_rgba(0,0,0,0.1)]">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-extrabold text-[#172b4d] mb-2 tracking-tight">Trello</h1>
-          <p className="text-[#5e6c84] font-semibold">Đăng ký tài khoản Trello</p>
+          <h1 className="mb-2 flex justify-center">
+            <Logo />
+          </h1>
+          <p className="text-[#5e6c84] font-semibold">Đăng ký tài khoản Fun To Do M</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { userMessageErrorMap } from "../../../../../../packages/shared/constants/user-message-error";
 import { setValueToCookie } from "../../../../../../packages/auth/server/server-action";
 import Link from "next/link";
+import { Logo } from "@/app/home/components/logo";
 
 export default function SignInPage() {
   const [formData, setFormData] = useState<FormDataSignIn>({
@@ -47,7 +48,9 @@ export default function SignInPage() {
     <div className="flex min-h-screen items-center justify-center bg-[#f9fafc] p-6">
       <div className="w-full max-w-[400px] rounded-sm bg-white p-8 shadow-[0_8px_16px_rgba(0,0,0,0.1)]">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-extrabold text-[#172b4d] mb-2 tracking-tight">Trello</h1>
+          <h1 className="mb-2 flex justify-center">
+            <Logo />
+          </h1>
           <p className="text-[#5e6c84] font-semibold">Đăng nhập để tiếp tục</p>
         </div>
 
